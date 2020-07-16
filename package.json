@@ -1,13 +1,15 @@
 {
-  "name": "insomnia-plugin-gcp-auth",
-  "version": "1.0.0",
+  "name": "insomnia-plugin-cloud-run-auth",
+  "version": "0.1.0",
   "description": "Plugin for auto-refreshing Google Cloud Run identity tokens",
   "main": "main.js",
-  "author": "Nick White",
+  "author": {
+    "name": "Nick White",
+    "url": "https://github.com/nawhi"
+  },
   "license": "MIT",
-  "private": true,
   "insomnia": {
-    "name": "gcp-auth",
+    "name": "cloud-run-auth",
     "description": "Plugin for auto-refreshing Google Cloud Run identity tokens"
   }
 }
