@@ -23,6 +23,3 @@ tokenTemplate = {
 
 module.exports.templateTags = [tokenTemplate];
 
-if (typeof require !== 'undefined' && require.main === module) {
-    tokenTemplate.run().then(console.log);
-}
