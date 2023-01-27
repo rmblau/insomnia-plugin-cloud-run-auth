@@ -13,7 +13,7 @@ tokenTemplate = {
     ],
     run: async (_, gcloud) => {
         return await new Promise((resolve, reject) => {
-            exec(`${gcloud} auth --quiet print-identity-token`, (err, stdout, stderr) => {
+            exec(`${gcloud} -- ${process.env.PROJECT_ID} auth --quiet print-identity-token`, (err, stdout, stderr) => {
                 if (err) reject(err);
                 resolve(stdout.toString().trim());
             });
